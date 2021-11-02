@@ -1,0 +1,1 @@
+SELECT * FROM film_category inner join film where film.film_id = film_category.film_id and film_category.category_id = (select category_id from category where category.name="Comedy") and film.rating = "PG-13";

@@ -1,0 +1,1 @@
+select count(film.film_id) from film inner join film_category on film.film_id = film_category.film_id where film_category.category_id = (select category_id from category where name = "Documentary") and film.special_features like "%Deleted Scenes%";
